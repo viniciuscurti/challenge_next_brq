@@ -33,11 +33,13 @@
 }
 
 .icon-dm{
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   border-radius: 15%;
+  background-color: #535353;
 }
 
 .bg-img-color{
   background-color: #9B9B9B;
 }
+
