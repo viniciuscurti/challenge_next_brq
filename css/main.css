@@ -33,13 +33,37 @@
 }
 
 .icon-dm{
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
   border-radius: 15%;
   background-color: #535353;
+  
 }
 
 .bg-img-color{
   background-color: #9B9B9B;
 }
 
+.org-icons{
+  display: flex ;
+  justify-content: center;
+}
+
+.tap-effect {
+  color: #fff !important;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 20px;
+  border-radius: 5px;
+  display: inline-block;
+  border: none;
+  transition: all 0.4s ease 0s;
+  }
+  .tap-effect:hover {
+    background: #434343;
+    letter-spacing: 1px;
+    -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
+    transition: all 0.4s ease 0s;
+    }

@@ -10,14 +10,14 @@
   <link rel="stylesheet" href="css/main.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    
+
 </head>
 
 <body class="bg">
-  
+
   <nav class="navbar bg-black op">
     <div class="container-fluid">
-      <span class="h1 sp-nav" >
+      <span class="h1 sp-nav">
         <h1 class="color-text">
           Funções da casa
         </h1>
@@ -31,59 +31,59 @@
   </nav>
 
   <!--1 fileira -->
-  <div class="sp-icon">
-    <div >
-      <img class="icon-dm" src="/img/Light-Off.png" alt="" onclick="openGate()">
-      <div class="ct-text">
-        <h6>Lampada</h6>
+    <div class="sp-icon">
+      <div class="tap-effect">
+        <img class="icon-dm " src="/img/Light-Off.png" id="lightId" onclick="alterLightImg()">
+        <div class="ct-text">
+          <h6>Lâmpada</h6>
+        </div>
       </div>
-    </div>
-    
-    <div>
-      <img class="icon-dm" src="/img/Garage-Locked.png" alt="">
-      <div class="ct-text">
-        <h6>Garagem</h6>
-      </div>
-    </div>
 
-    <div >
-      <img class="icon-dm" src="/img/Door-Closed.png" alt="">
-      <div class="ct-text">
-        <h6>Porta</h6>
+      <div class="tap-effect">
+        <img class="icon-dm" src="/img/Garage-Locked.png" id="garageId" onclick="alterGarageImg()">
+        <div class="ct-text">
+          <h6>Garagem</h6>
+        </div>
       </div>
-    </div>
 
-  </div>
+      <div class="tap-effect">
+        <img class="icon-dm" src="/img/Door-Closed.png" id="doorId" onclick="alterDoorImg()()">
+        <div class="ct-text">
+          <h6>Porta</h6>
+        </div>
+      </div>
 
-  <!--2 fileira -->
-  <div class="sp-icon">
-    <div>
-      <img src="/img/Lamp Off.png" alt="">
-      <div class="ct-text">
-        <h6>Lampada</h6>
-      </div>
-    </div>
-    
-    <div>
-      <img src="/img/Lamp Off.png" alt="">
-      <div class="ct-text">
-        <h6>Lampada</h6>
-      </div>
     </div>
 
-    <div>
-      <img src="/img/Lamp Off.png" alt="">
-      <div class="ct-text">
-        <h6>Lampada</h6>
+    <!--2 fileira -->
+    <div class="sp-icon">
+      <div class="tap-effect">
+        <img class="icon-dm" src="/img/Air-Conditioner-Off.png" id="airConditionerId" onclick="alterAirConditionerImg()">
+        <div class="ct-text">
+          <h6>Ar-condicionado</h6>
+        </div>
       </div>
+
+      <div class="tap-effect">
+        <img class="icon-dm" src="/img/Home-Security-Off.png" id="homeSecurityId" onclick="alterHomeSecurityImg()">
+        <div class="ct-text">
+          <h6>Sistema de Alarme</h6>
+        </div>
+      </div>
+
+      <div class="tap-effect">
+        <img class="icon-dm" src="/img/Camera.png" id="CamerasId">
+        <div class="ct-text">
+          <h6>Câmera</h6>
+        </div>
+      </div>
+
     </div>
-    
-  </div>
- 
 
 
-  <script src="main.js"></script>
-  <script src="plugins.js"></script>
+
+
+  <script src="js/imgSelect.js"></script>
 </body>
 
 </html>
