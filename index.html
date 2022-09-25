@@ -24,7 +24,17 @@
       </span>
       <span>
         <h1 class="color-text">
-          12:00
+          <!-- 12:00 -->
+          <script type="text/javascript" charset="utf-8">
+            let a;
+            let time;
+            setInterval(() => {
+              a = new Date();
+              time = a.getHours() + ':' + a.getMinutes();
+              document.getElementById('time').innerHTML = time;
+            }, 1000);
+          </script>
+          <span id="time"></span>
         </h1>
       </span>
     </div>
@@ -33,21 +43,21 @@
   <!--1 fileira -->
     <div class="sp-icon">
       <div class="tap-effect">
-        <img class="icon-dm " src="/img/Light-Off.png" id="lightId" onclick="alterLightImg()">
+        <img class="icon-dm " src="./img/Light-Off.png" id="lightId" onclick="alterLightImg()">
         <div class="ct-text">
           <h6>Lâmpada</h6>
         </div>
       </div>
 
       <div class="tap-effect">
-        <img class="icon-dm" src="/img/Garage-Locked.png" id="garageId" onclick="alterGarageImg()">
+        <img class="icon-dm" src="./img/Garage-Locked.png" id="garageId" onclick="alterGarageImg()">
         <div class="ct-text">
           <h6>Garagem</h6>
         </div>
       </div>
 
       <div class="tap-effect">
-        <img class="icon-dm" src="/img/Door-Closed.png" id="doorId" onclick="alterDoorImg()()">
+        <img class="icon-dm" src="./img/Door-Closed.png" id="doorId" onclick="alterDoorImg()()">
         <div class="ct-text">
           <h6>Porta</h6>
         </div>
@@ -58,30 +68,29 @@
     <!--2 fileira -->
     <div class="sp-icon">
       <div class="tap-effect">
-        <img class="icon-dm" src="/img/Air-Conditioner-Off.png" id="airConditionerId" onclick="alterAirConditionerImg()">
+        <img class="icon-dm" src="./img/Air-Conditioner-Off.png" id="airConditionerId" onclick="alterAirConditionerImg()">
         <div class="ct-text">
           <h6>Ar-condicionado</h6>
         </div>
       </div>
 
       <div class="tap-effect">
-        <img class="icon-dm" src="/img/Home-Security-Off.png" id="homeSecurityId" onclick="alterHomeSecurityImg()">
+        <img class="icon-dm" src="./img/Home-Security-On.png" id="homeSecurityId" onclick="alterHomeSecurityImg()">
         <div class="ct-text">
           <h6>Sistema de Alarme</h6>
         </div>
       </div>
 
       <div class="tap-effect">
-        <img class="icon-dm" src="/img/Camera.png" id="CamerasId">
+        <a data-toggle="modal" href="modal.html" class="btn btn-outline-secondary">
+          <img class="icon-dm" src="./img/Camera.png" id="CamerasId">
+        </a>
         <div class="ct-text">
           <h6>Câmera</h6>
         </div>
       </div>
 
     </div>
-
-
-
 
   <script src="js/imgSelect.js"></script>
 </body>
