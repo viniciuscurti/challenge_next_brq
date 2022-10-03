@@ -1,12 +1,58 @@
 <div id="myModal" class="modal fade">
+
+  <style>
+    .modal-content {
+      width: 100vw;
+      height: 100vh;
+      background: rgba(0,0,0,.5);
+      position: fixed;
+      top: 0px;
+      left: 0px;
+      z-index: 2000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .modal-body {
+     
+      background: white;
+      width: 35%;
+      min-width: 300px;
+      padding: 40px;
+      border: 10px solid;
+      position: relative;
+    }
+
+    .close
+    {
+      position: absolute;
+      top: -30px;
+      right: -30px;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      border: 4px solid white;
+      background: gray;
+      color: white;
+      cursor: pointer;
+      box-shadow: 0 4px 4px 0 rgba(0,0,0,.3);
+    }
+
+  </style>
+
   <div class="modal-dialog">
-      <div class="modal-content">
-          <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
-          </div>
-          <div class="modal-body">
-            <img src="./img/ghost-bear.gif">
-          </div>
-      </div> 
+    <div class="modal-content">
+      <div class="modal-header">
+        <!--<button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>-->
+      </div>
+      <div class="modal-body">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+        <img src ="./img/ghost-bear.gif">
+      </div>
+    </div>
   </div>
+  
 </div>
+
+
