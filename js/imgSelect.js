@@ -3,7 +3,6 @@ var imgValidate = false;
 var audioValidate = false;
 
 function alterGarageImg() {
-    
     if (imgValidate == true) {
         document.getElementById("garageId").src="./img/Garage-Open.png";
         imgValidate = false;
@@ -13,12 +12,15 @@ function alterGarageImg() {
     }
 }
 
-function alterLightImg() {
-    
+window.onload = function alterLightImg() { 
+     
+    debugger
     if (imgValidate == true) {
+        debugger
         document.getElementById("lightId").src="./img/Light-On.png";
         imgValidate = false;
     }else {
+        debugger
         document.getElementById("lightId").src="./img/Light-Off.png";
         imgValidate = true;
     }
@@ -71,3 +73,12 @@ function play() {
         audio.currentTime = 0;
     }
 };
+
+
+function alterLightImgModal() {
+    if (imgValidate == true) {
+        document.getElementById("modal-img").src="./img/lampada_on.gif";
+    }else {
+        document.getElementById("modal-img").src="./img/lampada_off.gif";
+    }
+}
