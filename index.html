@@ -13,7 +13,7 @@
   
 </head>
 
-<body class="bg">
+<body>
 
   <nav class="navbar bg-black op">
     <div class="container-fluid">
@@ -43,7 +43,7 @@
   <!--1 fileira -->
     <div class="sp-icon">
       <div class="tap-effect">
-        <button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#ExemploModalCentralizado">
+        <button type="button" class="btn btn-link " data-toggle="modal" data-target="#ModalLamp">
           <img class="icon-dm " src="./img/Light-Off.png" id="lightId" onclick="alterLightImg()">
         </button>
         <div class="ct-text">
@@ -52,14 +52,18 @@
       </div>
 
       <div class="tap-effect">
+        <button type="button" class="btn btn-link" data-toggle="modal" data-target="#ModalGarage">
         <img class="icon-dm" src="./img/Garage-Locked.png" id="garageId" onclick="alterGarageImg()">
+        </button>
         <div class="ct-text">
           <h6>Garagem</h6>
         </div>
       </div>
 
       <div class="tap-effect">
-        <img class="icon-dm" src="./img/Door-Closed.png" id="doorId" onclick="alterDoorImg()()">
+        <button type="button" class="btn btn-link" data-toggle="modal" data-target="#ModalDoor">
+        <img class="icon-dm" src="./img/Door-Closed.png" id="doorId" onclick="alterDoorImg()">
+        </button>
         <div class="ct-text">
           <h6>Porta</h6>
         </div>
@@ -70,14 +74,18 @@
     <!--2 fileira -->
     <div class="sp-icon">
       <div class="tap-effect">
+        <button type="button" class="btn btn-link" data-toggle="modal" data-target="#ModalAirConditioner">
         <img class="icon-dm" src="./img/Air-Conditioner-Off.png" id="airConditionerId" onclick="alterAirConditionerImg()">
+        </button>
         <div class="ct-text">
           <h6>Ar-condicionado</h6>
         </div>
       </div>
 
       <div class="tap-effect">
+        <button type="button" class="btn btn-link" data-toggle="modal" data-target="#ModalAlarm">
         <img class="icon-dm" src="./img/Home-Security-On.png" id="homeSecurityId" onclick="alterHomeSecurityImg()">
+        </button>
         <div class="ct-text">
           <h6>Sistema de Alarme</h6>
         </div>
@@ -85,9 +93,9 @@
 
 
       <div class="tap-effect">
-        <a data-toggle="modal" href="modal_camera.html" class="btn btn-outline-secondary">
+        <button type="button" class="btn btn-link" data-toggle="modal" data-target="#ModalCam">
           <img class="icon-dm" src="./img/Camera.png" id="CamerasId">
-        </a>
+        </button>
         <div class="ct-text">
           <h6>Câmera</h6>
         </div>
@@ -95,19 +103,98 @@
 
     </div>
 
-<!-- Botão para acionar modal -->
 
-<!-- Modal -->
-<div class="modal fade" id="ExemploModalCentralizado" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+<!-- Modal Lampada-->
+<div class="modal fade" id="ModalLamp" tabindex="-1" role="dialog" aria-labelledby="ModalLampada" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+        <button type="button" class="close" style="color: #dcdcdc;"  data-dismiss="modal" aria-label="Fechar">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
-        <img id="modallight" src="./img/lampada_on.gif" onload="alterLightImgModal()">
+        <img class="img-fluid" src="./img/lampada_off.gif" id="ModalLightId">
+      </div>  
+    </div>
+  </div>
+</div>
+
+<!-- Modal Garagem -->
+<div class="modal fade" id="ModalGarage" tabindex="-1" role="dialog" aria-labelledby="ModalGarage" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" style="color: #dcdcdc;" data-dismiss="modal" aria-label="Fechar">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img class="img-fluid" src="" id="ModalGarageId" width="700px" height="700px">
+      </div>  
+    </div>
+  </div>
+</div>
+
+<!-- Modal Porta-->
+<div class="modal fade" id="ModalDoor" tabindex="-1" role="dialog" aria-labelledby="ModalPorta" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" style="color: #dcdcdc;" data-dismiss="modal" aria-label="Fechar">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img class="img-fluid" src="" id="ModalDoorId">
+      </div>  
+    </div>
+  </div>
+</div>
+
+<!-- Modal Ar-Condicionado-->
+<div class="modal fade" id="ModalAirConditioner" tabindex="-1" role="dialog" aria-labelledby="ModalAr-condicionado" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" style="color: #dcdcdc;" data-dismiss="modal" aria-label="Fechar">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img class="img-fluid" src="" id="ModalAirConditionerId">
+      </div>  
+    </div>
+  </div>
+</div>
+
+<!-- Modal Alarme -->
+<div class="modal fade" id="ModalAlarm" tabindex="-1" role="dialog" aria-labelledby="ModalAlarme" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" style="color: #dcdcdc;" data-dismiss="modal" aria-label="Fechar">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img class="img-fluid" src="" id="ModalAlarmId">
+      </div>  
+    </div>
+  </div>
+</div>
+
+<!-- Modal Câmera-->
+<div class="modal fade" id="ModalCam" tabindex="-1" role="dialog" aria-labelledby="ModalCamera" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" style="color: #dcdcdc;" data-dismiss="modal" aria-label="Fechar">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img class="img-fluid" src="./img/Cam.gif" id="ModalCamId">
       </div>  
     </div>
   </div>

@@ -1,11 +1,25 @@
-.ex{
-  padding: 800px;
+
+
+
+
+body {
+  background: linear-gradient(-45deg, #e2e2e2, #1b191a, #0a0a0c, #464952);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
 }
 
-.bg{
-  background-image: url(../img/BG.jpg);
-  background-size: cover;
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
+
 
 .op{
   opacity: 50%;
@@ -22,7 +36,7 @@
 .sp-icon{
   display: flex;
   justify-content: space-around;
-  padding: 100px;
+  padding: 50px;
 }
 
 .ct-text{
@@ -67,3 +81,14 @@
     box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
     transition: all 0.4s ease 0s;
     }
+
+.modal-body{
+  background-image: url(../img/BG.jpg);
+  background-size: cover;
+}
+
+.modal-header{
+  background-image: url(../img/BG.jpg);
+  background-size: cover;
+  
+}
