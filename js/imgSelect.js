@@ -1,5 +1,5 @@
 
-var imgValidate = false;
+var imgValidate = true;
 var audioValidate = false;
 
 function alterGarageImg() {
@@ -12,15 +12,11 @@ function alterGarageImg() {
     }
 }
 
-window.onload = function alterLightImg() { 
-     
-    debugger
+function alterLightImg() { 
     if (imgValidate == true) {
-        debugger
         document.getElementById("lightId").src="./img/Light-On.png";
         imgValidate = false;
     }else {
-        debugger
         document.getElementById("lightId").src="./img/Light-Off.png";
         imgValidate = true;
     }
@@ -77,8 +73,8 @@ function play() {
 
 function alterLightImgModal() {
     if (imgValidate == true) {
-        document.getElementById("modal-img").src="./img/lampada_on.gif";
+        document.getElementById("modallight").src="./img/lampada_on.gif";
     }else {
-        document.getElementById("modal-img").src="./img/lampada_off.gif";
+        document.getElementById("modallight").src="./img/lampada_off.gif";
     }
 }
