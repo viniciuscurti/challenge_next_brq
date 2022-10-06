@@ -9,8 +9,9 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
   <!-- CSS only -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-  
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
 </head>
 
 <body>
@@ -19,7 +20,7 @@
     <div class="container-fluid">
       <span class="h1 sp-nav">
         <h1 class="color-text pd-text-nav">
-         Exterior da Casa
+          Exterior da Casa
         </h1>
       </span>
       <span>
@@ -32,151 +33,159 @@
   </nav>
 
   <!--1 fileira -->
-    <div class="sp-icon">
-      <div class="tap-effect">
-        <button type="button" class="btn btn-link " data-toggle="modal" data-target="#ModalLamp">
-          <img class="icon-dm " src="./img/smart-home-functions/Light-Off.png" id="lightId" onclick="alterLightImg()">
-        </button>
-        <div class="ct-text">
-          <h6>Luzes</h6>
-        </div>
+  <div class="sp-icon">
+    <div class="tap-effect">
+      <button type="button" class="btn btn-link " data-toggle="modal" data-target="#ModalLamp">
+        <img class="icon-dm " src="./img/smart-home-functions/Light-Off.png" id="lightId" onclick="alterLightImg()">
+      </button>
+      <div class="ct-text">
+        <h6>Luzes</h6>
       </div>
+    </div>
 
     <!--2 fileira -->
-      <div class="tap-effect">
-        <button type="button" class="btn btn-link" data-toggle="modal" data-target="#ModalAlarm">
-        <img class="icon-dm" src="./img/smart-home-functions/Home-Security-Off.png" id="homeSecurityId" onclick="alterHomeSecurityImg()">
-        </button>
-        <div class="ct-text">
-          <h6>Sistema de Alarme</h6>
+    <div class="tap-effect">
+      <button type="button" class="btn btn-link" data-toggle="modal" data-target="#ModalAlarm">
+        <img class="icon-dm" src="./img/smart-home-functions/Home-Security-Off.png" id="homeSecurityId"
+          onclick="alterHomeSecurityImg()">
+      </button>
+      <div class="ct-text">
+        <h6>Sistema de Alarme</h6>
+      </div>
+    </div>
+
+
+    <div class="tap-effect">
+      <button type="button" class="btn btn-link" data-toggle="modal" data-target="#ModalCam">
+        <img class="icon-dm" src="./img/smart-home-functions/Camera.png" id="CamerasId">
+      </button>
+      <div class="ct-text">
+        <h6>Câmera</h6>
+      </div>
+    </div>
+
+  </div>
+
+
+  <!-- Modal Lampada-->
+  <div class="modal fade" id="ModalLamp" tabindex="-1" role="dialog" aria-labelledby="ModalLampada" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" style="color: #dcdcdc;" data-dismiss="modal" aria-label="Fechar">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img class="img-fluid" src="./img/lampada_off.gif" id="ModalLightId">
         </div>
       </div>
+    </div>
+  </div>
 
-
-      <div class="tap-effect">
-        <button type="button" class="btn btn-link" data-toggle="modal" data-target="#ModalCam">
-          <img class="icon-dm" src="./img/smart-home-functions/Camera.png" id="CamerasId">
-        </button>
-        <div class="ct-text">
-          <h6>Câmera</h6>
+  <!-- Modal Alarme -->
+  <div class="modal fade" id="ModalAlarm" tabindex="-1" role="dialog" aria-labelledby="ModalAlarme" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" style="color: #dcdcdc;" data-dismiss="modal" aria-label="Fechar">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img class="img-fluid" src="" id="ModalAlarmId">
         </div>
       </div>
-
-    </div>
-
-
-<!-- Modal Lampada-->
-<div class="modal fade" id="ModalLamp" tabindex="-1" role="dialog" aria-labelledby="ModalLampada" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" style="color: #dcdcdc;"  data-dismiss="modal" aria-label="Fechar">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <img class="img-fluid" src="./img/lampada_off.gif" id="ModalLightId">
-      </div>  
     </div>
   </div>
-</div>
 
-<!-- Modal Alarme -->
-<div class="modal fade" id="ModalAlarm" tabindex="-1" role="dialog" aria-labelledby="ModalAlarme" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" style="color: #dcdcdc;" data-dismiss="modal" aria-label="Fechar">
-          <span aria-hidden="true">&times;</span>
-        </button>
+  <!-- Modal Câmera-->
+  <div class="modal fade" id="ModalCam" tabindex="-1" role="dialog" aria-labelledby="ModalCamera" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" style="color: #dcdcdc;" data-dismiss="modal" aria-label="Fechar">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img class="img-fluid" src="./img/Cam.gif" id="ModalCamId">
+        </div>
       </div>
-      <div class="modal-body">
-        <img class="img-fluid" src="" id="ModalAlarmId">
-      </div>  
     </div>
   </div>
-</div>
-
-<!-- Modal Câmera-->
-<div class="modal fade" id="ModalCam" tabindex="-1" role="dialog" aria-labelledby="ModalCamera" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" style="color: #dcdcdc;" data-dismiss="modal" aria-label="Fechar">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <img class="img-fluid" src="./img/Cam.gif" id="ModalCamId">
-      </div>  
-    </div>
-  </div>
-</div>
 
 
-<!--Sidebar -->
+  <!--Sidebar -->
 
-<div class="area"></div><nav class="main-menu">
-  <ul>
+  <div class="area"></div>
+  <nav class="main-menu">
+    <ul>
       <li>
-          <a href="index.html">
-              <i class="fa fa-home fa-2x"></i>
-              <span class="nav-text">
-                  Dashboard
-              </span>
-          </a>
-        
-      </li>
-      <li class="has-subnav">
-          <a href="#">
-              <i class="fa fa-laptop fa-2x"></i>
-              <span class="nav-text">
-                  Música
-              </span>
-          </a>
-          
-      </li>
-      <li class="has-subnav">
-          <a href="#">
-             <i class="fa fa-list fa-2x"></i>
-              <span class="nav-text">
-                  GPS
-              </span>
-          </a>
-          
-      </li>
-      <li class="has-subnav">
-          <a href="smart-home.html">
-             <i class="fa fa-folder-open fa-2x"></i>
-              <span class="nav-text">
-                  Smart Home
-              </span>
-          </a>
-         
-      </li>
-      
-  </ul>
+        <a href="index.html">
+          <i class="fa fa-home fa-2x"></i>
+          <span class="nav-text">
+            Dashboard
+          </span>
+        </a>
 
-  <ul class="logout">
+      </li>
+      <li class="has-subnav">
+        <a href="#">
+          <i class="fa fa-laptop fa-2x"></i>
+          <span class="nav-text">
+            Música
+          </span>
+        </a>
+
+      </li>
+      <li class="has-subnav">
+        <a href="#">
+          <i class="fa fa-list fa-2x"></i>
+          <span class="nav-text">
+            GPS
+          </span>
+        </a>
+
+      </li>
+      <li class="has-subnav">
+        <a href="smart-home.html">
+          <i class="fa fa-folder-open fa-2x"></i>
+          <span class="nav-text">
+            Smart Home
+          </span>
+        </a>
+
+      </li>
+
+    </ul>
+
+    <ul class="logout">
       <li>
-         <a href="#">
-               <i class="fa fa-power-off fa-2x"></i>
-               <img src="" alt="">
-              <span class="nav-text">
-                  Configurações
-              </span>
-          </a>
-      </li>  
-  </ul>
-</nav>
+        <a href="#">
+          <i class="fa fa-power-off fa-2x"></i>
+          <img src="" alt="">
+          <span class="nav-text">
+            Configurações
+          </span>
+        </a>
+      </li>
+    </ul>
+  </nav>
 
 
 
 
   <script src="js/main.js"></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
 
 </body>
 
