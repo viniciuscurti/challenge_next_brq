@@ -87,13 +87,13 @@ function alterAirConditionerImg() {
 function alterHomeSecurityImg() {
     
     if (imgValidate == true) {
-        document.getElementById("homeSecurityId").src="./img/Home-Security-On.png";
+        document.getElementById("homeSecurityId").src="./img/smart-home-functions/Home-Security-On.png";
         document.getElementById("ModalAlarmId").src="./img/warning-lights.gif";
         play()
         imgValidate = false;
         audioValidate = false
     }else {
-        document.getElementById("homeSecurityId").src="./img/Home-Security-Off.png";
+        document.getElementById("homeSecurityId").src="./img/smart-home-functions/Home-Security-Off.png";
         document.getElementById("ModalAlarmId").src="./img/warning-lights.gif";
         play()
         imgValidate = true;
