@@ -127,3 +127,8 @@ setInterval(() => {
   time = a.getHours() + ':' + a.getMinutes();
   document.getElementById('time').innerHTML = time;
 }, 1000);
+
+
+function alertMessage() {
+    window.alert("Nenhum dispositivo conectado")
+}
