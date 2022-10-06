@@ -57,25 +57,25 @@ function alterGarageImg() {
 function alterDoorImg() {
     
     if (imgValidate == true) {
-        document.getElementById("doorId").src="./img/Door-Open.png";
+        document.getElementById("doorId").src="./img/smart-home-functions/Door-Open.png";
         document.getElementById("ModalDoorId").src="./img/Door-Open.gif";
         imgValidate = false;
     }else {
-        document.getElementById("doorId").src="./img/Door-Closed.png";
+        document.getElementById("doorId").src="./img/smart-home-functions/Door-Closed.png";
         document.getElementById("ModalDoorId").src="./img/Door-close.gif";
         imgValidate = true;
     }
 }
 
-//Living Room
+//Living Room / Office
 function alterAirConditionerImg() {
     
     if (imgValidate == true) {
-        document.getElementById("airConditionerId").src="./img/Air-Conditioner-On.png";
+        document.getElementById("airConditionerId").src="./img/smart-home-functions/Air-Conditioner-On.png";
         document.getElementById("ModalAirConditionerId").src="./img/Air-Conditioner-Open.gif";
         imgValidate = false;
     }else {
-        document.getElementById("airConditionerId").src="./img/Air-Conditioner-Off.png";
+        document.getElementById("airConditionerId").src="./img/smart-home-functions/Air-Conditioner-Off.png";
         document.getElementById("ModalAirConditionerId").src="./img/Air-Conditioner-Close.gif";
         imgValidate = true;
     }
