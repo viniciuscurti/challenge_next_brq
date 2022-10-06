@@ -67,15 +67,15 @@ function alterDoorImg() {
     }
 }
 
-//Living Room
+//Living Room / Office
 function alterAirConditionerImg() {
     
     if (imgValidate == true) {
-        document.getElementById("airConditionerId").src="./img/Air-Conditioner-On.png";
+        document.getElementById("airConditionerId").src="./img/smart-home-functions/Air-Conditioner-On.png";
         document.getElementById("ModalAirConditionerId").src="./img/Air-Conditioner-Open.gif";
         imgValidate = false;
     }else {
-        document.getElementById("airConditionerId").src="./img/Air-Conditioner-Off.png";
+        document.getElementById("airConditionerId").src="./img/smart-home-functions/Air-Conditioner-Off.png";
         document.getElementById("ModalAirConditionerId").src="./img/Air-Conditioner-Close.gif";
         imgValidate = true;
     }
