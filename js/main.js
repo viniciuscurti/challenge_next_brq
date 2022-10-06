@@ -132,3 +132,4 @@ setInterval(() => {
 function alertMessage() {
     window.alert("Nenhum dispositivo conectado")
 }
+
