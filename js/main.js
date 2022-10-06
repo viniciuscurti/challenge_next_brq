@@ -57,11 +57,11 @@ function alterGarageImg() {
 function alterDoorImg() {
     
     if (imgValidate == true) {
-        document.getElementById("doorId").src="./img/Door-Open.png";
+        document.getElementById("doorId").src="./img/smart-home-functions/Door-Open.png";
         document.getElementById("ModalDoorId").src="./img/Door-Open.gif";
         imgValidate = false;
     }else {
-        document.getElementById("doorId").src="./img/Door-Closed.png";
+        document.getElementById("doorId").src="./img/smart-home-functions/Door-Closed.png";
         document.getElementById("ModalDoorId").src="./img/Door-close.gif";
         imgValidate = true;
     }
