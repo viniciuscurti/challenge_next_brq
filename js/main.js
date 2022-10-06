@@ -2,6 +2,46 @@
 var imgValidate = true;
 var audioValidate = true;
 
+//Universal
+function alterLightImg() { 
+    if (imgValidate == true) {
+        document.getElementById("lightId").src="./img/smart-home-functions/Light-On.png";
+        document.getElementById("ModalLightId").src="./img/Lamp-On.gif";
+        imgValidate = false;
+    }else {
+        document.getElementById("lightId").src="./img/smart-home-functions/Light-Off.png";
+        document.getElementById("ModalLightId").src="./img/Lamp-Off.gif";
+        imgValidate = true;
+    }
+}
+
+//Service Room
+function alterWashingMachinneImg() {
+    if (imgValidate == true) {
+        document.getElementById("washingMachinneId").src="./img/smart-home-functions/Washing-machinne-On.png";
+        document.getElementById("ModalGarageId").src="./img/Garage-Open.gif";
+        imgValidate = false;
+    }else {
+        document.getElementById("washingMachinneId").src="./img/smart-home-functions/Washing-machinne-Off.png";
+        document.getElementById("ModalGarageId").src="./img/smart-home-functions/Washin-machinne-Off.gif";
+        imgValidate = true;
+    }
+}
+
+function alterRobotImg() {
+    if (imgValidate == true) {
+        document.getElementById("robotId").src="./img/smart-home-functions/Robot-On.png";
+        document.getElementById("ModalGarageId").src="./img/Garage-Open.gif";
+        imgValidate = false;
+    }else {
+        document.getElementById("robotId").src="./img/smart-home-functions/Robot-Off.png";
+        document.getElementById("ModalGarageId").src="./img/smart-home-functions/Washin-machinne-Off.gif";
+        imgValidate = true;
+    }
+}
+
+
+//Garage
 function alterGarageImg() {
     if (imgValidate == true) {
         document.getElementById("garageId").src="./img/Garage-Open.png";
@@ -10,18 +50,6 @@ function alterGarageImg() {
     }else {
         document.getElementById("garageId").src="./img/Garage-Locked.png";
         document.getElementById("ModalGarageId").src="./img/Garage-Close.gif";
-        imgValidate = true;
-    }
-}
-
-function alterLightImg() { 
-    if (imgValidate == true) {
-        document.getElementById("lightId").src="./img/Light-On.png";
-        document.getElementById("ModalLightId").src="./img/Lamp-On.gif";
-        imgValidate = false;
-    }else {
-        document.getElementById("lightId").src="./img/Light-Off.png";
-        document.getElementById("ModalLightId").src="./img/Lamp-Off.gif";
         imgValidate = true;
     }
 }
@@ -39,6 +67,7 @@ function alterDoorImg() {
     }
 }
 
+//Living Room
 function alterAirConditionerImg() {
     
     if (imgValidate == true) {
@@ -52,6 +81,9 @@ function alterAirConditionerImg() {
     }
 }
 
+
+
+//Exterior home
 function alterHomeSecurityImg() {
     
     if (imgValidate == true) {
@@ -85,6 +117,9 @@ function play() {
 };
 
 
+
+
+//Watch
 let a;
 let time;
 setInterval(() => {
